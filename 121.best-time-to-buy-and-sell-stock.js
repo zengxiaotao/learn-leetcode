@@ -1,0 +1,22 @@
+/*
+ * @lc app=leetcode id=121 lang=javascript
+ *
+ * [121] Best Time to Buy and Sell Stock
+ */
+/**
+ * @param {number[]} prices
+ * @return {number}
+ */
+var maxProfit = function (prices) {
+  if (prices.length < 2) return 0;
+  let ret = 0;
+  let min = Infinity;
+
+  for (let i = 0; i < prices.length; i += 1) {
+    const price = prices[i];
+    if (price < min) min = price;
+    ret = Math.max(ret, price - min);
+  }
+
+  return ret;
+};
