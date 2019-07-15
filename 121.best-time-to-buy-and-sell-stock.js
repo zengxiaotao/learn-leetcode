@@ -20,3 +20,7 @@ var maxProfit = function (prices) {
 
   return ret;
 };
+
+// [7, 1, 5, 3, 6, 4]
+// 每遍历到一个变量，拿到之前的最小值
+// 用当前的值减去最小值即可。
