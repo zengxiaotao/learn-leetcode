@@ -46,5 +46,9 @@
  * @return {boolean}
  */
 var hasPathSum = function (root, sum) {
+  if (!root) return false;
+  if ((!root.left && !root.right) && root.val === sum) return true;
 
+  const remain = sum - root.val;
+  return hasPathSum(root.left, remain) || hasPathSum(root.right, remain);
 };
