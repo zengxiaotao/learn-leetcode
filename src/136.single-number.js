@@ -11,7 +11,7 @@
  * Total Submissions: 705.2K
  * Testcase Example:  '[2,2,1]'
  *
- * Given a non-empty array of integers, every element appears twice except for
+ * Given a non-empty array of integers, every element appears twice except for
  * one. Find that single one.
  *
  * Note:
